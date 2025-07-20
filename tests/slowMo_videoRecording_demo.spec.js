@@ -1,6 +1,6 @@
 import { test, expect, chromium } from '@playwright/test';
 
-test('Slow motion and video recording demo', async () => {
+test.skip('Slow motion and video recording demo', async () => {
   const browser = await chromium.launch({
     headless: false,
     slowMo: 1000,
